@@ -1,0 +1,62 @@
+.Header {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.Home {
+    border-radius: 50%;
+}
+.Home-Button {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.Spotify-logo {
+    padding-right: 30px;
+}
+.Search-bar-input {
+    background-color: rgb(39, 36, 36);
+    padding: 16px;
+    padding-right: 250px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    color: white;
+}
+.search-container {
+    display: flex;
+
+}
+input::placeholder {
+    color: rgb(173, 173, 171);
+    font-size: 15px;
+}
+.Search-button {
+    background-color: rgb(39, 36, 36);
+    border: none;
+    padding: 12px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+button {
+    color: white;
+    
+}
+.trios {
+    color: rgb(173, 173, 171);
+    background-color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.trios:hover {
+    color: white;
+    
+}

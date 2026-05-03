@@ -2,7 +2,9 @@
     background-color: black;
     height: 60px;
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 5px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -15,6 +17,7 @@
     background-color: black;
     border: none;
     cursor: pointer;
+    padding-right: 10px;
 }
 .Spotify-logo {
     padding-right: 30px;
@@ -22,14 +25,17 @@
 .Search-bar-input {
     background-color: rgb(39, 36, 36);
     padding: 16px;
-    padding-right: 250px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: none;
     color: white;
+    flex: 1 1 0;
+    max-width: 400px;
 }
 .search-container {
     display: flex;
+    
+    flex: 1 1 0
 
 }
 input::placeholder {
@@ -55,8 +61,41 @@ button {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    font-size: 15px;
 }
 .trios:hover {
     color: white;
     
+}
+.symbol {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    padding-right: 25px;
+}
+.Pobierz-button {
+    padding-right: 25px;
+}
+.install-button {
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+}
+.arrow {
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Zaloguj-sie-button {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: 15px;
+    text-shadow: 0.5px 0px 0px black;
+    border: none;
+    cursor: pointer;
+}
+.register-button {
+    padding-right: 15px;
 }

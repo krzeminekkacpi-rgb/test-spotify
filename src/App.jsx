@@ -6,10 +6,14 @@ import './App.css'
 
 function App() {
   const [muzyki, setMuzyki] = useState([{
-    src: '',
+    name: '',
+    autor: '',
+    audio: '',
     id: crypto.randomUUID()
   }, {
-    src: '',
+    name: '',
+    autor: '',
+    audio: '',
     id: crypto.randomUUID()
   }])
 

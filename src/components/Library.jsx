@@ -13,11 +13,13 @@ export function Library() {
                 <button className='Utworz-playliste-button'>Utwórz playlistę</button>
             </div>
             <div className='Space'></div>
-            <div className='Utworz-playliste'>
+            
+            <div className='Utworz-playliste-dynamic'>
                 <span className='upp'>Poszukajmy podkastów które możesz obserwować</span>
                 <span className='down'>Będziemy Cię informować o nowych odcinkach</span>
                 <button className='Utworz-playliste-button'>Przeglądaj podcasty</button>
             </div>
+            
             <div className='Space2'></div>
             <div className='Footer-spans'>
                 <span className='podtext block'>Kwestie prawne</span>
@@ -29,9 +31,10 @@ export function Library() {
 
                 <span className='podtext block text-test'>Dostępność</span>
                 <span className='podtext cookie-files'>Pliki cookie</span>
-            </div>
-            <div>
+            
+            
                 <button className='Lang-settings'>🌐 Polski</button>
+                <div className='space3'></div>
             </div>
         </div>
     )

@@ -16,6 +16,9 @@
     box-sizing: border-box;
     cursor: pointer;
 }
+img {
+  filter: brightness(75%);
+}
 .Utwory-text {
     color: white;
     font-weight: bold;
@@ -42,6 +45,7 @@
 .top-song {
 width: 250px;
 height: 50px;
+filter: brightness(75%);
 }
 .top-song-name {
     margin: 10px;
@@ -56,6 +60,7 @@ color: rgb(150, 147, 147);
     margin-bottom: 0px;
     width: 250px;
     border-radius: 10px;
+    height: 250px;
 }
 .top-author:hover {
     text-decoration: underline;

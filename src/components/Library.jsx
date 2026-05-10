@@ -32,7 +32,6 @@ export function Library() {
                 <span className='podtext block text-test'>Dostępność</span>
                 <span className='podtext cookie-files'>Pliki cookie</span>
             
-            
                 <button className='Lang-settings'>🌐 Polski</button>
                 <div className='space3'></div>
             </div>

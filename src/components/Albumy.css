@@ -14,21 +14,62 @@
     padding: 10px 40px;
     flex-direction: column;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .Utwory-text {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    display: block;
+    
 }
-.Utwory-text:hover {
+.Utwory-text:hover, .Show-all-top:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 .Utwory-main-div {
-    background-color: black;
+    background-color: rgb(27, 25, 27);
     flex-direction: column;
     display: flex;
 }
 .Audio-div {
     display: flex;
+    overflow: auto;
+}
+.top-audio {
+ background-color: rgb(27, 25, 27);
+ margin-right: 25px;
+}
+.top-song {
+width: 250px;
+height: 50px;
+}
+.top-song-name {
+    margin: 10px;
+color: white;
+}
+.top-author {
+    margin: 10px;
+color: rgb(150, 147, 147);
+}
+.top-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 250px;
+    border-radius: 10px;
+}
+.top-author:hover {
+    text-decoration: underline;
+}
+.top-song-name:hover {
+    text-decoration: underline;
+}
+.Utwory-top-first {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.Show-all-top {
+    color: rgb(160, 160, 160);
+    font-weight: bold;
+    font-size: 14px;
 }

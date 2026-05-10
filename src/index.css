@@ -1,4 +1,9 @@
 body {
     margin: 0px; 
     background-color: rgb(0, 0, 0);
+    
 }
+html {
+  scrollbar-color: #424242 rgb(27, 25, 27);
+}
+  

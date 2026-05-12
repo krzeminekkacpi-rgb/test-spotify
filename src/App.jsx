@@ -59,14 +59,68 @@ function App() {
     audio: 'audio/Shape-of-you.mp3',
     image: 'image/Shape-of-you.png',
     id: crypto.randomUUID()
+  }, {
+    name: 'Saudi',
+    author: '',
+    audio: 'audio/Saudi.mp3',
+    image: 'wykonawcy/Tax-Free.jpg',
+    id: crypto.randomUUID()
+  }, {
+    name: 'Summer',
+    author: 'Calvin Harris',
+    audio: 'audio/Summer.mp3',
+    image: 'image/Summer.png',
+    id: crypto.randomUUID()
+  }]);
+
+  const [wykonawcy, setWykonawcy] = useState([{
+    author: 'Mata',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Mata.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Sobel',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Sobel.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Sanah',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Sanah.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Kizo',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Kizo.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Sentino',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Sentino.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Ed Sheeran',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Ed-Sheeran.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Dawid Podsiadło',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Dawid-Podsiadło.jpg',
+    id: crypto.randomUUID()
+  }, {
+    author: 'Tax Free',
+    role: 'Wykonawca',
+    image: 'wykonawcy/Tax-Free.jpg',
+    id: crypto.randomUUID()
   }]);
 
   return (
     <>
       <Header></Header>
-      <div className='main-view'>
+      <div class="main-view">
       <Library ></Library>
-      <Albumy muzyki={muzyki} setMuzyki={setMuzyki}></Albumy>
+      <Albumy muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy}></Albumy>
       </div>
     </>
   )

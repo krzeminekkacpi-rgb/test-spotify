@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { Header } from './components/header'
-import { Library } from './components/Library'
-import { Albumy } from './components/Albumy'
+import { Home } from './assets/pages/Home';
+import { Routes, Route } from 'react-router'
 import './App.css'
 
 function App() {
@@ -61,7 +60,7 @@ function App() {
     id: crypto.randomUUID()
   }, {
     name: 'Saudi',
-    author: '',
+    author: 'Tax Free, Malik Montana, Kazior, TYK',
     audio: 'audio/Saudi.mp3',
     image: 'wykonawcy/Tax-Free.jpg',
     id: crypto.randomUUID()
@@ -70,6 +69,18 @@ function App() {
     author: 'Calvin Harris',
     audio: 'audio/Summer.mp3',
     image: 'image/Summer.png',
+    id: crypto.randomUUID()
+  }, {
+    name: 'Dla Mnie Masz Stajla',
+    author: 'Trzeci Wymiar',
+    audio: 'audio/Dla-Mnie-Masz-Stajla.mp3',
+    image: 'image/Dla-Mnie-Masz-Stajla.png',
+    id: crypto.randomUUID()
+  }, {
+    name: 'Gejowski Nurek',
+    author: 'GAY RECORDS',
+    audio: 'audio/Gejowski-Nurek.mp3',
+    image: 'image/Gejowski-Nurek.jpg',
     id: crypto.randomUUID()
   }]);
 
@@ -117,11 +128,9 @@ function App() {
 
   return (
     <>
-      <Header></Header>
-      <div class="main-view">
-      <Library ></Library>
-      <Albumy muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy}></Albumy>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy} />}></Route>
+      </Routes>
     </>
   )
 }

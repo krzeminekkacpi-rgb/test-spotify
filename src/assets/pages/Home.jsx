@@ -7,7 +7,7 @@ export function Home({ muzyki, wykonawcy, setMuzyki, setWykonawcy }) {
     return (
         <>
         <Header></Header>
-              <div class="main-view">
+              <div className="main-view">
               <Library ></Library>
               <Albumy muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy}></Albumy>
               </div>

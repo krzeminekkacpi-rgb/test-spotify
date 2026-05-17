@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './Library.css'
 
 export function Library() {
@@ -5,12 +6,16 @@ export function Library() {
         <div className="main-Library">
             <div className='Naglowek'>
             <h3 className='Naglowek-text'>Biblioteka</h3>
+            <Link to="playlist">
             <button className='Utworz' title='Utwórz playliste, folder lub Jam'>➕ Utwórz</button>
+            </Link>
             </div>
             <div className='Utworz-playliste'>
                 <span className='upp'>Utwórz swoją pierwszą playlistę</span>
                 <span className='down'>To proste, pomożemy Ci</span>
+                <Link to="playlist">
                 <button className='Utworz-playliste-button'>Utwórz playlistę</button>
+                </Link>
             </div>
             <div className='Space'></div>
             

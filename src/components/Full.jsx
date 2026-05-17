@@ -1,9 +1,18 @@
 import { useLocation } from "react-router"
 import './Full.css'
 
-export function Full() {
+export function Full({ playlistIds, setPlaylistIds }) {
     const location = useLocation();
     const track = location.state
+
+    function DodajDoPlaylisty() {
+        if(!playlistIds.includes(track.id)) {
+            const NewPlaylist = ([...playlistIds, track.id])
+            setPlaylistIds(NewPlaylist)
+        console.log(playlistIds);
+        }
+        
+    }
 
     return (
         <div className='Main-Div'>
@@ -17,7 +26,7 @@ export function Full() {
                 </div>
             </div>
             <div className="Music-audio-div">
-                <button className="Add-to-playlist" title='Dodaj do playlisty'>+</button>
+                <button className="Add-to-playlist" title='Dodaj do playlisty' onClick={DodajDoPlaylisty}>+</button>
             <audio src={track.audio} controls className="Music-audio"></audio>
             </div>
         </div>

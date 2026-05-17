@@ -2,6 +2,7 @@ import SpotifyLogo from '../../../img/spotify.jpg'
 import HomeLogo from '../../../img/domm.png'
 import SearchIcon from '../../../img/search-icon-png-5.png'
 import Arrow from '../../../img/arrow5.png'
+import { Link } from 'react-router'
 import './Header.css'
 
 export function Header() {
@@ -9,7 +10,9 @@ return (
     <div className="Header-wrap">
         <div className="Header">
             <img src={SpotifyLogo} width='40px' className='Spotify-logo'></img>
+            <Link to="/">
             <button className='Home-Button' title='Home'><img src={HomeLogo} width="40px" className='Home'></img></button>
+            </Link>
             <div className='search-container'>
                 <button className='Search-button' ><img src={SearchIcon} width="20.15px"></img></button>
             <input className='Search-bar-input' placeholder='Czego chcesz posłuchać'></input>

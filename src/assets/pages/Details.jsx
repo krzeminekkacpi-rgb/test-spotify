@@ -3,13 +3,13 @@ import { Library } from "../../components/Library"
 import { Full } from "../../components/Full"
 import './Details.css'
 
-export function Details() {
+export function Details({ playlistIds, setPlaylistIds }) {
     return (
         <>
                 <Header></Header>
-                      <div class="main-view">
+                      <div className="main-view">
                       <Library ></Library>
-                      <Full></Full>
+                      <Full playlistIds={playlistIds} setPlaylistIds={setPlaylistIds}></Full>
                       </div>
                 </>
     )

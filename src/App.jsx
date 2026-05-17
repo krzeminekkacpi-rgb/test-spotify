@@ -6,6 +6,8 @@ import { Playlist } from './assets/pages/Playlist';
 import './App.css'
 
 function App() {
+  const [playlistIds, setPlaylistIds] = useState([]);
+
   const [muzyki, setMuzyki] = useState([{
     name: 'Pif Paf',
     author: 'Figo, Samogony',
@@ -180,8 +182,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy} />}></Route>
-        <Route path="details" element={<Details muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy}/>}></Route>
-        <Route path="playlist" element={<Playlist></Playlist>}></Route>
+        <Route path="details" element={<Details muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy} setPlaylistIds={setPlaylistIds} playlistIds={playlistIds}/>}></Route>
+        <Route path="playlist" element={<Playlist playlistIds={playlistIds} setPlaylistIds={setPlaylistIds} muzyki={muzyki}></Playlist>}></Route>
       </Routes>
     </>
   )

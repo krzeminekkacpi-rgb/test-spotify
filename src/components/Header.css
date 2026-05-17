@@ -100,3 +100,11 @@ button {
 .register-button {
     padding-right: 15px;
 }
+.Add-to-playlist {
+    color: grey;
+    border: 3px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,92 @@
+.Main-Div {
+    background-color: rgb(27, 25, 27);
+    flex: 1 1 0;
+    border: 7px solid black;
+    border-top: none;
+    display: flex;
+    height: calc(100dvh - 60px);
+    max-height: 100hv;
+    border-radius: 15px;
+    border-left: none;
+    min-width: 800px;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.Music-image {
+    height: 230px;
+    width: 230px;
+    padding-right: 25px;
+    display: flex;
+    
+}
+
+.Highest-section {
+    background-color: rgb(83, 82, 82);
+    outline: 25px solid rgb(83, 83, 83);
+    display: flex;
+}
+
+.Right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.Singiel-span {
+    color: white;
+    padding-top: 70px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.Music-name {
+    color: white;
+    height: min-content;
+
+}
+
+.Music-name-text {
+    font-size: 100px;
+    margin: 0px 0px;
+    letter-spacing: -1px;
+}
+.Music-author {
+    padding-top: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+.Music-author:hover {
+    text-decoration: underline;
+}
+.Music-audio {
+    filter: sepia(70%) saturate(150%) hue-rotate(90deg) brightness(60%);
+    flex: 1 1 0;
+    max-height: 50px;
+    width: 80%;
+}
+.Music-audio-div {
+    flex: 1 1 0;
+    max-height: 50px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.Add-to-playlist {
+    color: grey;
+    border: 3px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}

@@ -1,6 +1,6 @@
 import Pifpaf from '../../../audio/Pif-paf.mp3'
+import { Link } from 'react-router';
 import './Albumy.css'
-
 
 export function Albumy({ muzyki, wykonawcy }) {
     return (
@@ -15,10 +15,12 @@ export function Albumy({ muzyki, wykonawcy }) {
                     {muzyki.map((music) => {
                         return (
                         <div className='top-audio' key={music.id}>
+                            <Link to={`/details?type=music&id=${music.id}`} style={{ textDecoration: 'none', display: "block"}} state={music}>
                             <img className='top-img' src={music.image}></img>
                             <audio className='top-song' controls src={music.audio}></audio>
                             <h4 className='top-song-name'>{music.name}</h4>
                             <p className='top-author'>{music.author}</p>
+                            </Link>
                         </div>
                         );
                     })}

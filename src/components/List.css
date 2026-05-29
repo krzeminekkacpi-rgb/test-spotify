@@ -1,3 +1,9 @@
+.Main-Div-playlist {
+    height: calc(100dvh - 60px);
+    max-height: calc(100dvh - 60px);
+    
+}
+
 .Main-Div {
     background-color: rgb(27, 25, 27);
     flex: 1 1 0;
@@ -5,7 +11,6 @@
     border-top: none;
     display: flex;
     height: calc(100dvh - 60px);
-    max-height: 100hv;
     border-radius: 15px;
     border-left: none;
     min-width: 800px;
@@ -13,11 +18,69 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 25px 25px;
     box-sizing: border-box;
-    flex-direction: column;
+    
 }
 .Utwory-text {
     color: white;
     font-weight: bold;
     cursor: pointer;
 
+}
+.playlist {
+    max-width: 175px;
+}
+
+.Utwory-main-div {
+    background-color: rgb(27, 25, 27);
+    flex-direction: column;
+    display: flex;
+}
+.top-song {
+    width: 175px;
+    height: 40px;
+    filter: brightness(75%);
+}
+
+.top-song-name {
+    margin: 10px;
+    color: white;
+}
+
+.top-author {
+    margin: 10px;
+    color: rgb(150, 147, 147);
+    font-size: 14px;
+}
+
+.top-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 175px;
+    border-radius: 10px;
+    height: 175px;
+}
+
+.playlist:hover {
+    text-decoration: underline;
+}
+
+.top-song-name:hover {
+    text-decoration: underline;
+}
+.Audio-div-playlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+.get-in-line {
+    display: flex;
+    justify-content: space-between;
+}
+.del-button {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid rgb(165, 165, 165);
+    cursor: pointer;
+    align-self: flex-start;
+    aspect-ratio: 1/1;
 }

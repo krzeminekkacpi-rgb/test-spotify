@@ -4,8 +4,7 @@
     border: 7px solid black;
     border-top: none;
     display: flex;
-    height: calc(100dvh - 60px);
-    max-height: 100hv;
+    height: 100dvh;
     border-radius: 15px;
     border-left: none;
     min-width: 800px;
@@ -14,6 +13,7 @@
     padding: 25px 25px;
     box-sizing: border-box;
     flex-direction: column;
+    cursor: default;
 }
 
 .Music-image {
@@ -89,4 +89,173 @@
     margin-right: 20px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+
+
+
+
+
+.Others-audio-div {
+    display: flex;
+    overflow: auto;
+    margin-right: 12.5px;
+}
+
+.others-audio {
+    background-color: rgb(27, 25, 27);
+    padding: 0px 12.5px;
+    padding-top: 12.5px;
+    border-radius: 5px;
+}
+
+.others-song {
+    width: 175px;
+    height: 40px;
+    filter: brightness(75%);
+}
+
+.others-song-name {
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.others-author {
+    margin: 10px;
+    color: rgb(150, 147, 147);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.others-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 175px;
+    border-radius: 10px;
+    height: 175px;
+}
+
+.others-author:hover {
+    text-decoration: underline;
+}
+
+.others-song-name:hover {
+    text-decoration: underline;
+}
+
+.Utwory-others-first {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0px 12.5px;
+    padding-top: 50px;
+}
+.others-audio {
+    background-color: rgb(27, 25, 27);
+    padding: 0px 12.5px;
+    padding-top: 12.5px;
+    border-radius: 5px;
+}
+.Others-utwory-text {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Others-utwory-main-div {
+    background-color: rgb(27, 25, 27);
+    flex-direction: column;
+    display: flex;
+    max-width: min-content;
+}
+.Show-all-others {
+    color: rgb(160, 160, 160);
+    font-weight: bold;
+    font-size: 14px;
+}
+.others-audio:hover {
+    background-color: rgb(39, 36, 39);
+}
+.others-author:hover {
+    text-decoration: underline;
+}
+
+.others-song-name:hover {
+    text-decoration: underline;
+}
+.Others-utwory-text:hover,
+.Show-all-others:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Line {
+    border: none;
+    border-top: 1px solid rgb(48, 48, 48);
+}
+.Footer-spans-full {
+    background-color: transparent;
+    padding-top: 50px;
+}
+.The-display-full {
+    display: flex;
+    padding: 10px 20px;
+    padding-bottom: 0px;
+}
+.White {
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+.Grey {
+    color: rgb(150, 147, 147);
+    display: block;
+    padding-top: 10px;
+    font-weight: 100;
+}
+.Grey:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+.Section-1 {
+    flex: 2 1 0;
+}
+.Instagram-button {
+    background-color: rgb(58, 58, 58);
+    border-radius: 50%;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.Twetter-button {
+    background-color: rgb(58, 58, 58);
+    border-radius: 50%;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.Facebook-button {
+    background-color: rgb(58, 58, 58);
+    border-radius: 50%;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+.Section-2 {
+    flex: 1 1 0;
+}
+.The-down-text {
+    color: rgb(150, 147, 147);
+    display: block;
+    padding-top: 10px;
+    font-weight: 100;
+    font-size: 14px;
+}
+.Down-full {
+    padding: 20px;
+}
+.full-hover:hover {
+    background-color: grey;
 }

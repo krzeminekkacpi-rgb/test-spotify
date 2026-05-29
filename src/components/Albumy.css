@@ -4,8 +4,7 @@
     border: 7px solid black;
     border-top: none;
     display: flex;
-    height: calc(100dvh - 60px);
-    max-height: 100hv;
+    height: 100dvh;
     border-radius: 15px;
     border-left: none;
     min-width: 800px;
@@ -52,6 +51,7 @@ img {
     padding: 0px 12.5px;
     padding-top: 12.5px;
     border-radius: 5px;
+    width: min-content;
 }
 
 .top-song {
@@ -112,4 +112,7 @@ img {
     width: 175px;
     border-radius: 50%;
     height: 175px;
+}
+.space-radio {
+    padding-top: 25px;
 }

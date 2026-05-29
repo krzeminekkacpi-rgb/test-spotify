@@ -2,7 +2,7 @@ import Pifpaf from '../../../audio/Pif-paf.mp3'
 import { Link } from 'react-router';
 import './Albumy.css'
 
-export function Albumy({ muzyki, wykonawcy }) {
+export function Albumy({ muzyki, wykonawcy, radio }) {
     return (
         <div className='Main-Div'>
             <div className='Utwory-top-first'>
@@ -43,6 +43,32 @@ export function Albumy({ muzyki, wykonawcy }) {
                             
                             <h4 className='top-song-name'>{wyk.author}</h4>
                             <p className='top-author'>{wyk.role}</p>
+                        </div>
+                        );
+                    })}
+                    
+                   
+                </div>
+                    
+            </div>
+            
+
+
+            <div className='Utwory-top-first space-radio'>
+            <h2 className='Utwory-text'>Popularne radia</h2>
+            <span className='Show-all-top'>Pokaż wszystko</span>
+            </div>
+            <div className='Utwory-main-div'>
+                <div className='Audio-div'>
+                    
+                    {radio.map((stacja) => {
+                        return (
+                        <div className='top-audio' key={stacja.id}>
+                            
+                            <img className='top-img' src={stacja.image}></img>
+                            <audio className='top-song' controls src={stacja.link}></audio>
+                            <h4 className='top-song-name'>{stacja.name}</h4>
+                            
                         </div>
                         );
                     })}

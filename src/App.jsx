@@ -280,72 +280,72 @@ function App() {
     link: 'http://mp3.polskieradio.pl:8080/;',
     image: 'radio-img/Radio-24.png',
     name: 'Polskie radio 24',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440002'
   }, {
     link: 'http://mp3.polskieradio.pl:8902/;',
     image: 'radio-img/Polskie-radio.png',
     name: 'Polskie radio dwójka',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440003'
   }, {
     link: 'https://sc1.radioheaven.pl:8000/;stream.mp3',
     image: 'radio-img/Radio-Heaven.png',
     name: 'Radio Heaven',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440004'
   }, {
     link: 'http://zet090-02.cdn.eurozet.pl:8404/',
     image: 'radio-img/Radio-Zet.png',
     name: 'Radio Zet',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440005'
   }, {
      link: 'http://stream.prw.pl:8000/prwmp3',
     image: 'radio-img/Radio-Wroclaw.png',
     name: 'Radio Wrocław',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440006'
   }, {
     link: 'http://audio.radio.opole.pl:8035/1',
     image: 'radio-img/Radio-Opole.png',
     name: 'Radio Opole',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440007'
   }, {
     link: 'http://stream4.nadaje.com:11986/prs',
     image: 'radio-img/Radio-Szczecin.png',
     name: 'Radio Szczecin',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440008'
   }, {
     link: 'http://stream2.nadaje.com:11140/rdc',
     image: 'radio-img/Radio-Warszawa.png',
     name: 'Radio Warszawa',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440009'
   }, {
     link: 'http://ice1.somafm.com/dronezone-128-mp3',
     image: 'radio-img/Radio-Drone-Zone.png',
     name: 'Radio SomaFM Drone Zone',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440010'
   }, {
     link: 'http://amp.cesnet.cz:8000/cro-jazz.flac',
     image: 'radio-img/Czeskie-Radio.png',
     name: 'Czeskie Radio',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440011'
   }, {
     link: 'http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3',
     image: 'radio-img/Radio-Francja.png',
     name: 'Radio Francja',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440012'
   }, {
     link: 'https://rs203-krk.rmfstream.pl/rmf_fm',
     image: 'radio-img/Radio-RMF-FM.png',
     name: 'Radio RMF FM',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440013'
   }, {
     link: 'https://stream0.wfmu.org/freeform-128k',
     image: 'radio-img/Radio-USA.png',
     name: 'Radio USA',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440014'
   }, {
     link: 'https://stream.radioparadise.com/mp3-128',
     image: 'radio-img/Radio-USA.png',
     name: 'Radio Paradise Main USA',
-    id: '570e8400-e29b-41d4-a716-446655440001'
+    id: '570e8400-e29b-41d4-a716-446655440015'
   }]);
 
   return (

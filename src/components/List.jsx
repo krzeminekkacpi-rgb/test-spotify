@@ -3,8 +3,6 @@ import { useRef } from 'react';
 import './List.css'
 
 
-
-
 export function List({ playlistIds, muzyki, setPlaylistIds  }) {
     function RemoveFromList(id) {
         setPlaylistIds(playlistIds.filter(playlistIds => !(playlistIds == id)))
@@ -23,8 +21,6 @@ export function List({ playlistIds, muzyki, setPlaylistIds  }) {
         console.log(autoPlay.current);
        }
     };
-
-    
     
     return (
         <div className='Main-Div'>

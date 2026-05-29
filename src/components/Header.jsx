@@ -5,7 +5,7 @@ import Arrow from '../../../img/arrow5.png'
 import { Link } from 'react-router'
 import './Header.css'
 
-export function Header() {
+export function Header({ setSearch }) {
 return (
     <div className="Header-wrap">
         <div className="Header">
@@ -15,7 +15,7 @@ return (
             </Link>
             <div className='search-container'>
                 <button className='Search-button' ><img src={SearchIcon} width="20.15px"></img></button>
-            <input className='Search-bar-input' placeholder='Czego chcesz posłuchać'></input>
+            <input className='Search-bar-input' placeholder='Czego chcesz posłuchać' onChange={e => setSearch(e.target.value)}></input>
             </div>
 
             

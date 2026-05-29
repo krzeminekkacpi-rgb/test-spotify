@@ -2,7 +2,7 @@ import Pifpaf from '../../../audio/Pif-paf.mp3'
 import { Link } from 'react-router';
 import './Albumy.css'
 
-export function Albumy({ muzyki, wykonawcy, radio }) {
+export function Albumy({ muzyki, wykonawcy, radio, search}) {
     return (
         <div className='Main-Div'>
             <div className='Utwory-top-first'>
@@ -12,7 +12,10 @@ export function Albumy({ muzyki, wykonawcy, radio }) {
             <div className='Utwory-main-div'>
                 <div className='Audio-div'>
                     
-                    {muzyki.map((music) => {
+                    
+                    {muzyki.filter((muz) => {
+                        return search === '' || muz.name.toLowerCase().includes(search.toLowerCase());
+                    }).map((music) => {
                         return (
                         <div className='top-audio' key={music.id}>
                             <Link to={`/details?type=music&id=${music.id}`} style={{ textDecoration: 'none', display: "block"}} state={music}>

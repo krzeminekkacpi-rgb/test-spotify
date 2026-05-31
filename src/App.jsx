@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router'
 import { Details } from './assets/pages/Details';
 import { Playlist } from './assets/pages/Playlist';
 import './App.css'
+import { Allpage } from './assets/pages/Allpage';
 
 function App() {
   const [playlistIds, setPlaylistIds] = useState(() => {
@@ -228,6 +229,104 @@ function App() {
     image: 'image/Wonderland.png',
     color: 'darklategrey',
     id: "550e8400-e29b-41d4-a716-446655440030"
+  }, {
+    name: 'Beliver',
+    author: 'Imagine Dragons',
+    audio: 'audio/Beliver.mp3',
+    image: 'image/Beliver.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440031"
+  }, {
+    name: 'Hey Mama',
+    author: 'David Guetta',
+    audio: 'audio/Hey-Mama.mp3',
+    image: 'image/Hey-Mama.png',
+    color: 'orange',
+    id: "550e8400-e29b-41d4-a716-446655440032"
+  }, {
+    name: 'Blank Space',
+    author: 'Taylor Swift',
+    audio: 'audio/Blank-Space.mp3',
+    image: 'image/Blank-Space.png',
+    color: 'grey',
+    id: "550e8400-e29b-41d4-a716-446655440033"
+  }, {
+    name: 'Call Me Maybe',
+    author: 'Carly Rae Jepsen',
+    audio: 'audio/Call-Me-Maybe.mp3',
+    image: 'image/Call-Me-Maybe.png',
+    color: 'grey',
+    id: "550e8400-e29b-41d4-a716-446655440034"
+  }, {
+    name: 'Cheap Thrils',
+    author: 'Sia',
+    audio: 'audio/Cheap-Thrils.mp3',
+    image: 'image/Cheap-Thrils.png',
+    color: 'cornflowerblue',
+    id: "550e8400-e29b-41d4-a716-446655440035"
+  }, {
+    name: 'Demons',
+    author: 'Sia',
+    audio: 'audio/Demons.mp3',
+    image: 'image/Demons.png',
+    color: 'darkblue',
+    id: "550e8400-e29b-41d4-a716-446655440036"
+  }, {
+    name: 'Give Me Everything',
+    author: 'Pitbull',
+    audio: 'audio/Give-Me-Everything.mp3',
+    image: 'image/Give-Me-Everything.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440037"
+  }, {
+    name: 'Happy',
+    author: 'Pharrall Williams',
+    audio: 'audio/Happy.mp3',
+    image: 'image/Happy.png',
+    color: 'red',
+    id: "550e8400-e29b-41d4-a716-446655440038"
+  }, {
+    name: 'Mi Gente',
+    author: 'J Balvin, Willy William',
+    audio: 'audio/Mi-Gente.mp3',
+    image: 'image/Mi-Gente.png',
+    color: 'green',
+    id: "550e8400-e29b-41d4-a716-446655440039"
+  }, {
+    name: 'Moves Like Jagger',
+    author: 'Marron 5',
+    audio: 'audio/Moves-Like-Jagger.mp3',
+    image: 'image/Moves-Like-Jagger.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440040"
+  }, {
+    name: 'Rap God',
+    author: 'Eminem',
+    audio: 'audio/Rap-God.mp3',
+    image: 'image/Rap-God.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440041"
+  }, {
+    name: 'Shake It Off',
+    author: 'Taylor Swift',
+    audio: 'audio/Shake-It-Off.mp3',
+    image: 'image/Shake-It-Off.png',
+    color: 'cornflowerblue',
+    id: "550e8400-e29b-41d4-a716-446655440042"
+  }, {
+    name: 'Thrift Shop',
+    author: 'MACKLEMORE, Ryan Lewis',
+    audio: 'audio/Thrift-Shop.mp3',
+    image: 'image/Thrift-Shop.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440043"
+  }, {
+    name: 'WIGGRY',
+    author: 'Jason Dynamo',
+    audio: 'audio/Wiggry.mp3',
+    image: 'image/Wiggry.png',
+    color: 'gold',
+    id: "550e8400-e29b-41d4-a716-446655440044"
   }]);
 
   const [wykonawcy, setWykonawcy] = useState([{
@@ -354,6 +453,7 @@ function App() {
         <Route path="/" element={<Home muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy} radio={radio} setRadio={setRadio}/>}></Route>
         <Route path="details" element={<Details muzyki={muzyki} setMuzyki={setMuzyki} wykonawcy={wykonawcy} setWykonawcy={setWykonawcy} setPlaylistIds={setPlaylistIds} playlistIds={playlistIds}/>}></Route>
         <Route path="playlist" element={<Playlist playlistIds={playlistIds} setPlaylistIds={setPlaylistIds} muzyki={muzyki}></Playlist>}></Route>
+        <Route path="Allpage" element={<Allpage muzyki={muzyki}></Allpage>}></Route>
       </Routes>
     </>
   )

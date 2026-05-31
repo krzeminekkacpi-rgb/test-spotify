@@ -7,7 +7,9 @@ export function Albumy({ muzyki, wykonawcy, radio, search}) {
         <div className='Main-Div'>
             <div className='Utwory-top-first'>
             <h2 className='Utwory-text'>Utwory na czasie</h2>
+            <Link to='/Allpage'>
             <span className='Show-all-top'>Pokaż wszystko</span>
+            </Link>
             </div>
             <div className='Utwory-main-div'>
                 <div className='Audio-div'>

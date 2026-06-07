@@ -266,7 +266,7 @@ function App() {
     id: "550e8400-e29b-41d4-a716-446655440035"
   }, {
     name: 'Demons',
-    author: 'Sia',
+    author: 'Imagine Dragons',
     audio: 'audio/Demons.mp3',
     image: 'image/Demons.png',
     color: 'darkblue',
@@ -327,6 +327,48 @@ function App() {
     image: 'image/Wiggry.png',
     color: 'gold',
     id: "550e8400-e29b-41d4-a716-446655440044"
+  }, {
+    name: '1 Moment',
+    author: 'Buka',
+    audio: 'audio/1-Moment.mp3',
+    image: 'image/1-Moment.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440045"
+  }, {
+    name: 'Bałkanica',
+    author: 'PIERSI',
+    audio: 'audio/Balkanica.mp3',
+    image: 'image/Balkanica.png',
+    color: 'goldenrod',
+    id: "550e8400-e29b-41d4-a716-446655440046"
+  }, {
+    name: 'Havana',
+    author: 'Camila Cabello',
+    audio: 'audio/Havana.mp3',
+    image: 'image/Havana.png',
+    color: 'red',
+    id: "550e8400-e29b-41d4-a716-446655440047"
+  }, {
+    name: 'Ona czuje piniądz',
+    author: 'Łobuzy',
+    audio: 'audio/Ona-Czuje-We-Mnie-Piniadz.mp3',
+    image: 'image/Ona-Czuje-We-Mnie-Piniadz.png',
+    color: 'grey',
+    id: "550e8400-e29b-41d4-a716-446655440048"
+  }, {
+    name: 'Tik-Tok',
+    author: 'Ke$ha',
+    audio: 'audio/Tik-Tok.mp3',
+    image: 'image/Tik-Tok.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440049"
+  }, {
+    name: 'Zanim pójdę',
+    author: 'happysad',
+    audio: 'audio/Zanim-Pojde.mp3',
+    image: 'image/Zanim-Pojde.png',
+    color: 'darklategrey',
+    id: "550e8400-e29b-41d4-a716-446655440050"
   }]);
 
   const [wykonawcy, setWykonawcy] = useState([{
@@ -370,6 +412,7 @@ function App() {
     image: 'wykonawcy/Tax-Free.jpg',
     id: "560e8400-e29b-41d4-a716-446655440008"
   }]);
+
   const [radio, setRadio] = useState([{
     link: 'http://mp3.polskieradio.pl:8900/;',
     image: 'radio-img/Polskie-radio.png',
